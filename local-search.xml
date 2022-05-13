@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>ElasticSearch 初探</title>
+    <link href="/2022/05/13/ElasticSearch-%E5%88%9D%E6%8E%A2/"/>
+    <url>/2022/05/13/ElasticSearch-%E5%88%9D%E6%8E%A2/</url>
+    
+    <content type="html"><![CDATA[<p>初识ES！了解什么是ES和安装过程</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="什么是ES"><a href="#什么是ES" class="headerlink" title="什么是ES"></a>什么是ES</h3><h3 id="快速安装ES"><a href="#快速安装ES" class="headerlink" title="快速安装ES"></a>快速安装ES</h3>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>ElasticSearch</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2022/05/12/hello-world/"/>
     <url>/2022/05/12/hello-world/</url>
