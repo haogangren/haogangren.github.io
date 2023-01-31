@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>量化笔记之qlib-1</title>
+    <link href="/2023/02/01/%E9%87%8F%E5%8C%96%E7%AC%94%E8%AE%B0%E4%B9%8Bqlib-1/%E9%87%8F%E5%8C%96%E7%AC%94%E8%AE%B0%E4%B9%8Bqlib-1/"/>
+    <url>/2023/02/01/%E9%87%8F%E5%8C%96%E7%AC%94%E8%AE%B0%E4%B9%8Bqlib-1/%E9%87%8F%E5%8C%96%E7%AC%94%E8%AE%B0%E4%B9%8Bqlib-1/</url>
+    
+    <content type="html"><![CDATA[<h1 id="快速上手Qlib"><a href="#快速上手Qlib" class="headerlink" title="快速上手Qlib"></a>快速上手Qlib</h1><h2 id="Qlib安装-见官网"><a href="#Qlib安装-见官网" class="headerlink" title="Qlib安装 见官网"></a>Qlib安装 见官网</h2><ul><li>安装Microsoft C++生成工具</li><li>setup.py安装</li><li>数据准备<ul><li>支持dump_all转换用户数据格式 csv -&gt; bin + txt<ul><li>建议采用复权价格</li><li>数据需包含factor或者change字段<figure class="highlight jboss-cli"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><pre><code class="hljs jboss-cli">python scripts/dump_bin.py dump_all <span class="hljs-params">--csv_path</span> ~<span class="hljs-string">/.qlib/csv_data/hk_data</span><br><span class="hljs-params">--qlib_dir</span> ~<span class="hljs-string">/.qlib/qlib_data/hk_data</span> <span class="hljs-params">--symbol_field_name</span> stock_code<br><span class="hljs-params">--date_field_name</span> date <span class="hljs-params">--include_fields</span><br>open,high,low,close,volume,money,factor,vwap,change<br></code></pre></td></tr></table></figure>上述 dump_all 指令包含如下参数：</li></ul></li></ul></li></ul><ol><li>symbol_field_name：csv 文件中股票代码列名，此处为 stock_code；</li><li>date_field_name：csv 文件中日期列名，此处为 date；</li><li>include_fields：其余字段名，注意逗号后不能有空格，否则数据转换将出现错误。</li></ol><p>该路径下包含 calendar、features 和 instruments 三个子文件夹，分别存放交易日历、行情特<br>征和股票池。其中行情特征为 bin 格式.</p><p>reference:<br>Yang, X. , Liu, W. , Zhou, D. , Bian, J. , &amp; Liu, T. Y. . (2020). Qlib: an ai-oriented<br>quantitative investment platform. arXiv.</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>qlib</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>ES 自动补全</title>
     <link href="/2022/05/15/ES-%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8/"/>
     <url>/2022/05/15/ES-%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8/</url>

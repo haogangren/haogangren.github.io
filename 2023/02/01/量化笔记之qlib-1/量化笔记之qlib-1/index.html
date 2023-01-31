@@ -16,19 +16,39 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="http://example.com/archives/2022/05/index.html">
+    <meta name="description" content="快速上手QlibQlib安装 见官网 安装Microsoft C++生成工具 setup.py安装 数据准备 支持dump_all转换用户数据格式 csv -&gt; bin + txt 建议采用复权价格 数据需包含factor或者change字段1234python scripts&#x2F;dump_bin.py dump_all --csv_path ~&#x2F;.qlib&#x2F;csv_data&#x2F;hk_data-">
+<meta property="og:type" content="article">
+<meta property="og:title" content="量化笔记之qlib-1">
+<meta property="og:url" content="http://example.com/2023/02/01/%E9%87%8F%E5%8C%96%E7%AC%94%E8%AE%B0%E4%B9%8Bqlib-1/%E9%87%8F%E5%8C%96%E7%AC%94%E8%AE%B0%E4%B9%8Bqlib-1/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="快速上手QlibQlib安装 见官网 安装Microsoft C++生成工具 setup.py安装 数据准备 支持dump_all转换用户数据格式 csv -&gt; bin + txt 建议采用复权价格 数据需包含factor或者change字段1234python scripts&#x2F;dump_bin.py dump_all --csv_path ~&#x2F;.qlib&#x2F;csv_data&#x2F;hk_data-">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-01-31T16:17:36.000Z">
+<meta property="article:modified_time" content="2023-01-31T17:09:26.209Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="qlib">
 <meta name="twitter:card" content="summary_large_image">
   
   
-  <title>归档 - Hexo</title>
+  <title>量化笔记之qlib-1 - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -55,7 +75,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -156,9 +176,43 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="归档">
+            <span class="h2" id="subtitle" title="量化笔记之qlib-1">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2023-02-01 00:17" pubdate>
+        2023年2月1日 凌晨
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      667 字
+    </span>
+  
+
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      6 分钟
+    </span>
+  
+
+  
+  
+</div>
 
             
           </div>
@@ -171,58 +225,101 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 5 篇文章</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2022</p>
-    
-    <a href="/2022/05/15/ES-%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">ES 自动补全</span>
-      <time style="float: right;">05-15</time>
-    </a>
-  
-    
-    <a href="/2022/05/15/ES-%E6%95%B0%E6%8D%AE%E8%81%9A%E5%90%88/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">ES 数据聚合</span>
-      <time style="float: right;">05-15</time>
-    </a>
-  
-    
-    <a href="/2022/05/13/ElasticSearch-%E5%88%9D%E6%8E%A2/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">ElasticSearch 初探</span>
-      <time style="float: right;">05-13</time>
-    </a>
-  
-    
-    <a href="/2022/05/12/hello-world/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">Hello World</span>
-      <time style="float: right;">05-12</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">量化笔记之qlib-1</h1>
+            
+            <div class="markdown-body">
+              <h1 id="快速上手Qlib"><a href="#快速上手Qlib" class="headerlink" title="快速上手Qlib"></a>快速上手Qlib</h1><h2 id="Qlib安装-见官网"><a href="#Qlib安装-见官网" class="headerlink" title="Qlib安装 见官网"></a>Qlib安装 见官网</h2><ul>
+<li>安装Microsoft C++生成工具</li>
+<li>setup.py安装</li>
+<li>数据准备<ul>
+<li>支持dump_all转换用户数据格式 csv -&gt; bin + txt<ul>
+<li>建议采用复权价格</li>
+<li>数据需包含factor或者change字段<figure class="highlight jboss-cli"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><pre><code class="hljs jboss-cli">python scripts/dump_bin.py dump_all <span class="hljs-params">--csv_path</span> ~<span class="hljs-string">/.qlib/csv_data/hk_data</span><br><span class="hljs-params">--qlib_dir</span> ~<span class="hljs-string">/.qlib/qlib_data/hk_data</span> <span class="hljs-params">--symbol_field_name</span> stock_code<br><span class="hljs-params">--date_field_name</span> date <span class="hljs-params">--include_fields</span><br>open,high,low,close,volume,money,factor,vwap,change<br></code></pre></td></tr></table></figure>
+上述 dump_all 指令包含如下参数：</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>symbol_field_name：csv 文件中股票代码列名，此处为 stock_code；</li>
+<li>date_field_name：csv 文件中日期列名，此处为 date；</li>
+<li>include_fields：其余字段名，注意逗号后不能有空格，否则数据转换将出现错误。</li>
+</ol>
+<p>该路径下包含 calendar、features 和 instruments 三个子文件夹，分别存放交易日历、行情特<br>征和股票池。其中行情特征为 bin 格式.</p>
+<p>reference:<br>Yang, X. , Liu, W. , Zhou, D. , Bian, J. , &amp; Liu, T. Y. . (2020). Qlib: an ai-oriented<br>quantitative investment platform. arXiv.</p>
 
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/qlib/">qlib</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/05/15/ES-%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8/">
+                        <span class="hidden-mobile">ES 自动补全</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -305,6 +402,19 @@
   
 
 
+
+  
+    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
+  
+  
+    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
+  
+  
+    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
+  
 
 
 
